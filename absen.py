@@ -29,7 +29,7 @@ class Absen():
 
         options = webdriver.ChromeOptions()
         options.add_argument("--disable-blink-features=AutomationControlled")
-        # options.add_argument("--headless=new")
+        options.add_argument("--headless=new")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False) 
         options.add_argument('--ignore-certificate-errors')
@@ -50,6 +50,8 @@ class Absen():
 
         presensi = driver.find_element(By.XPATH, '//*[@id="btnPresensi"]')
         presensi.click()
+
+        print("Berhasil absen pulang")
         
         driver.close()
 
