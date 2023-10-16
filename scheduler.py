@@ -9,8 +9,8 @@ def run_absen():
     subprocess.run(["python", "absen.py"])
 
 # Jadwal penjadwalan: Setiap jam 7 pagi dan jam 7 malam
-scheduler.add_job(run_absen, 'cron', hour=7, minute=0, second=0)
-scheduler.add_job(run_absen, 'cron', hour=19, minute=0, second=0)
+scheduler.add_job(run_absen, 'cron', hour=8, minute=25, second=0)
+scheduler.add_job(run_absen, 'cron', hour=20, minute=17, second=0)
 
 # Jalankan scheduler
 scheduler.start()

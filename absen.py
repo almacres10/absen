@@ -2,6 +2,7 @@ import pandas as pd
 from datetime import datetime
 import os
 import time
+import sys
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -56,9 +57,11 @@ def main():
     absen_instance = Absen('817932702', 'rad10headK11D@')
     # Memanggil metode absen melalui objek absen_instance
     absen_instance.absen()
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()
+    
 
 
 
